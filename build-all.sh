@@ -15,6 +15,6 @@ for OS in ${OS_PLATFORM_ARG[@]}; do
   fi
   for ARCH in ${OS_ARCH_ARG[@]}; do
     echo "Building binary for ${OS}/${ARCH}..."
-    GOARCH=${ARCH} GOOS=${OS} CGO_ENABLED=0 ${GO_BUILD_CMD} -o "dist/IniDat_${OS}-${ARCH}${BIN_EXT}" .
+    GOARCH=${ARCH} GOOS=${OS} CGO_ENABLED=0 ${GO_BUILD_CMD} -o "dist/MuIniDat_${OS}-${ARCH}${BIN_EXT}" .
   done
 done
